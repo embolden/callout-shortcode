@@ -6,9 +6,8 @@ jQuery(document).ready(function($) {
       ed.addCommand( 'tnics_insert_shortcode', function(u, v) {
         selected = tinyMCE.activeEditor.selection.getContent();
 
-
         if( selected ) {
-          return false;
+          return;
         }else {
           content = '[callout]';
         }
