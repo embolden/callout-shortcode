@@ -18,14 +18,15 @@ function tnics_callout_shortcode( $atts ) {
     'cta' => '',
     'button' => '',
     'buttoncolor' => '',
+    'link' => '',
     'class' => ''
   );
   $attr = shortcode_atts( $defaults, $atts );
 
   $output = '<div class="callout ' . esc_attr( $attr['class'] ) . '">';
-  $output .= '<div class="callout-caption">' . esc_attr( $attr['caption'] ) . '</div>';
-  $output .= '<div class="callout-cta">' . esc_attr( $attr['cta'] ) . '</div>';
-  $output .= '<div class="button-' . esc_attr( $attr['buttoncolor'] ) . '">' . esc_attr( $attr['button'] ) . '</div>';
+  $output .= '<div class="callout-caption"><span>' . esc_attr( $attr['caption'] ) . '</span></div>';
+  $output .= '<div class="callout-cta"><span>' . esc_attr( $attr['cta'] ) . '</span></div>';
+  $output .= '<div class="button-' . esc_attr( $attr['buttoncolor'] ) . '"><a href="' . esc_attr( $attr['link'] ) . '">' . esc_attr( $attr['button'] ) . '</a></div>';
   $output .= '</div>';
 
   return $output;
