@@ -1,7 +1,7 @@
-#Readme
-##Callout Shortcode
+# Readme
+## Callout Shortcode
 
-###Default Output
+### Default Output
     [callout caption="Lorem ipsum dolor sit amet" cta="Lorem Ipsum!" button="Dolor sit" buttoncolor="blue" link="http://www.foo.com"]
 
     <div class="callout">
@@ -10,7 +10,7 @@
       <div class="button-blue"><a href="http://www.foo.com">Dolor sit</a></div>
     </div>
 
-###With Extra classes
+### With Extra classes
     [callout caption="Lorem ipsum dolor sit amet" cta="Lorem Ipsum!" button="Dolor sit" buttoncolor="blue" link="http://www.foo.com" class="foo bar"]
 
     <div class="callout foo bar">
